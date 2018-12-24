@@ -42,7 +42,8 @@
                 "Endereco: <b>$endereco, $numero</b> Bairro: <b>$bairro</b><br>" .
                 "          Cidade: <b>$cidade/$estado</b> CEP: <b>$cep</b><br>";
             
-    $r = enviar_email("ivan@is5.com.br", "REQUISIÇÃO DE CADASTRO", $mensagem);
+    //ESPECIFIQUE AQUI O SEU ENDERECO DE E-MAIL QUE IRA RECEBER A REQUISICAO DE CADASTRO
+    $r = enviar_email("destino@gmail.com", "REQUISIÇÃO DE CADASTRO", $mensagem);
 
     if ($r) {
         echo "E-mail enviado com sucesso!";
